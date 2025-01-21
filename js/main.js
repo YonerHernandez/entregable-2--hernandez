@@ -41,7 +41,7 @@ document.getElementById("btn-mostrar-catalogo").addEventListener("click", () => 
     menu += "</ul>"
     catalogoDiv.innerHTML = menu;
     mensajeDiv.innerHTML = "<p>Genial, excelente opción, este es nuestro catálogo disponible en estos momentos..!! :)</p>"
-});
+})
 
 function agregarAlCarrito(index) {
     carrito.push(productos[index])
@@ -52,7 +52,7 @@ function agregarAlCarrito(index) {
 
 document.getElementById("btn-mostrar-carrito").addEventListener("click", () => {
     mostrarCarrito()
-});
+})
 
 function mostrarCarrito() {
     if (carrito.length === 0) {
@@ -61,7 +61,7 @@ function mostrarCarrito() {
         let carritoContenido = "<h3>Productos en el carrito:</h3><ul>"
         carrito.forEach((producto, i) => {
             carritoContenido += `<li>${i + 1}. ${producto.nombre}: ${producto.precio}USD <button onclick="eliminarDelCarrito(${i})">Eliminar del Carrito</button></li>`
-        });
+        })
         carritoContenido += "</ul>"
         
         carritoContenido += `<h4>Total: ${calcularTotal()}USD</h4>`
@@ -70,7 +70,7 @@ function mostrarCarrito() {
 }
 
 function eliminarDelCarrito(index) {
-    const productoEliminado = carrito.splice(index, 1)
+    let productoEliminado = carrito.splice(index, 1)
     mensajeDiv.innerHTML = `<p>Producto eliminado del carrito: ${productoEliminado[0].nombre}</p>`
     actualizarCarrito()
     localStorage.setItem("carrito", JSON.stringify(carrito))
