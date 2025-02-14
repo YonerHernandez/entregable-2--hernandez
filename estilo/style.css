@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #f7f2f2;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 1, 0),
+            rgba(0, 0, 1, 0.925)
+        ),
+        url(../imagenes/proteina\ ejercicio.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 1, 0),
+            rgba(0, 0, 1, 0.925)
+        ),
+        url(../imagenes/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+header a {
+    text-decoration: none;
+color: white;
+border-bottom: 1em;
+background-color: #000000;
+font-size: 1.5em;
+}
+
+#titulo-primario {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+main {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+}
+
+button {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4b0082;
+    transform: scale(1.05);
+    border-color: rgb(226, 224, 228);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 250px;
+    text-align: center;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: blueviolet;
+}
+
+.secundario {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensaje-bienvenida {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+#catalogo {
+    margin: 20px 0;
+}
+
+#catalogo .producto-imagen {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#catalogo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#catalogo li {
+    background-color: #3f3d3d67;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #6a0dad;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#catalogo button {
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#catalogo button:hover {
+    background-color: blueviolet;
+}
+
+#carrito {
+    margin-top: 20px;
+}
+
+#carrito ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carrito li {
+    background-color: #3333338e;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+#carrito h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+}
+
+#btn-salir {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#btn-salir:hover {
+    background-color: #c82333;
+}
+
+#mensaje {
+    font-size: 1.5em;
+    color: white;
+}
+
+#comprobante-compra {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#comprobante-compra h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+#comprobante-compra p {
+    font-size: 16px;
+    color: #555;
+    margin: 8px 0;
+}
+
+#comprobante-compra ul {
+    list-style: none;
+    padding: 0;
+}
+
+#comprobante-compra ul li {
+    background:  gainsboro;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#comprobante-compra strong {
+    color: black;
+    font-size: 18px;
+}
+
+#comprobante-compra em {
+    color: gainsboro;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#formulario-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background:  gainsboro;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#formulario-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#formulario-container input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#formulario-container button {
+    background-color: #af1495bd;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#formulario-container button:hover {
+    background-color: #7c0b779d;
+}
+
+#btn-finalizar-compra {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #c913b193;
+    color: rgb(2, 2, 2);
+    cursor: pointer;
+}
+
+#btn-finalizar-compra:hover {
+    background-color: #0000007a;
+}
+
+button.btn-aumentar,
+button.btn-disminuir {
+    background-color: #7e066e9f;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+button.btn-aumentar:hover,
+button.btn-disminuir:hover {
+    background-color: #0000008e;
+}
+
+button.btn-eliminar {
+    background-color: #1a45bbb6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+button.btn-eliminar:hover {
+    background-color: #0e0e0e7e;
+}

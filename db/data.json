@@ -1,0 +1,25 @@
+[
+    { "nombre": "Aumentador de Peso",
+     "precio": 300 ,
+      "imagen": "imagenes/BSN TRUE-MASS Weight Gainer, Muscle Mass Gainer Protein Powder, 5_82 Pound.jpeg" },
+
+    { "nombre": "Proteina",
+     "precio": 250,
+     "imagen": "imagenes/Isolate Protein (900g) - Sabor_ Baunilha.jpeg"
+    },
+
+    { "nombre": "Creatina",
+     "precio": 250,
+     "imagen":"imagenes/Ofertas.jpeg"
+     
+    },
+
+    { "nombre": "Multivitaminico",
+     "precio": 200,
+      "imagen": "imagenes/BioTech USA Multivitamin for Men 60db tabletta.jpeg"
+    },
+
+    { "nombre": "Omega 3", 
+    "precio": 400,
+     "imagen":"imagenes/Super Epa Ômega 3 - Pote 90 Capsulas.jpeg"}
+  ]
